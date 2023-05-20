@@ -7,10 +7,10 @@ This application performs well on CUDA enabled Linux devices. The exact environm
 pip3 install requirememts_linux_cuda.txt
 ```
 
-On other platforms such as Windows or Mac, consider using the installation.sh script. Create and activate a virtual environment. Then run:
-
+For a fresh install on Windows, Linux or Mac, consider using the installation.sh script or the following:
+Create and activate a virtual environment. Then run:
 ```{bash}
-bash installation.sh
+pip3 install torch torchvision torchaudio Pillow transformers diffusers["torch"] streamlit
 ```
 
 ## Running the application
