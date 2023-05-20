@@ -43,3 +43,9 @@ The img2img is performed by taking each item in the dataset (image path, prompt,
 
 ### Logging the Metrics
 The metrics are tracked using the @profile decorator, available in the profile_utils.py file. The logging and psutil libraries are used to log the time and memory usage. If cuda is available, we also log the GPU memory usage. The logs are stored in the log.txt file. Every time the "Predict" button is clicked, a hash is created for the run and the metrics are tracked.
+
+## Points to improve
++ Tracking of metrics is a bit tricky.
++ The GPU used in the demo is very old. Can use a much better GPU for faster inference.
++ I tried to create a docker image, but the university server did not have docker installed.
++ This application scaled with a powerful GPU on a Kubernetes cluster can perform well as an MVP.
