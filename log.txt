@@ -1,95 +1,73 @@
-16:56:16,665 root INFO ------------------------------ RUN STARTED WITH HASH: 126693520041915974425838133861712710851 ------------------------------
-16:56:16,669 root INFO Running on device: NVIDIA TITAN X (Pascal)
-16:56:42,597 root INFO GPU Mem Allocated: 5.140 GB
-16:56:42,610 root INFO GPU Mem Cached: 6.934 GB
-16:56:42,639 root INFO img2img_single_image: Memory Before: 10.463 GB, After: 14.251 GB
-16:56:42,654 root INFO Memory Consumed: 3.788 GB; Exec time (HH:MM:SS): 00:00:25
-16:57:03,378 root INFO GPU Mem Allocated: 5.144 GB
-16:57:03,392 root INFO GPU Mem Cached: 6.934 GB
-16:57:03,436 root INFO img2img_single_image: Memory Before: 14.266 GB, After: 15.210 GB
-16:57:03,460 root INFO Memory Consumed: 0.944 GB; Exec time (HH:MM:SS): 00:00:20
-16:57:21,633 root INFO GPU Mem Allocated: 4.840 GB
-16:57:21,645 root INFO GPU Mem Cached: 7.184 GB
-16:57:21,671 root INFO img2img_single_image: Memory Before: 15.211 GB, After: 15.172 GB
-16:57:21,672 root INFO Memory Consumed: -0.038 GB; Exec time (HH:MM:SS): 00:00:18
-16:57:39,69 root INFO GPU Mem Allocated: 4.840 GB
-16:57:39,71 root INFO GPU Mem Cached: 7.184 GB
-16:57:39,89 root INFO img2img_single_image: Memory Before: 15.172 GB, After: 15.425 GB
-16:57:39,95 root INFO Memory Consumed: 0.252 GB; Exec time (HH:MM:SS): 00:00:17
-16:57:59,541 root INFO GPU Mem Allocated: 5.144 GB
-16:57:59,542 root INFO GPU Mem Cached: 7.184 GB
-16:57:59,563 root INFO img2img_single_image: Memory Before: 15.429 GB, After: 15.840 GB
-16:57:59,572 root INFO Memory Consumed: 0.412 GB; Exec time (HH:MM:SS): 00:00:20
-16:58:17,700 root INFO GPU Mem Allocated: 5.144 GB
-16:58:17,701 root INFO GPU Mem Cached: 7.184 GB
-16:58:17,733 root INFO img2img_single_image: Memory Before: 15.847 GB, After: 15.992 GB
-16:58:17,734 root INFO Memory Consumed: 0.145 GB; Exec time (HH:MM:SS): 00:00:18
-16:58:35,11 root INFO GPU Mem Allocated: 4.840 GB
-16:58:35,20 root INFO GPU Mem Cached: 7.184 GB
-16:58:35,32 root INFO img2img_single_image: Memory Before: 15.992 GB, After: 16.010 GB
-16:58:35,51 root INFO Memory Consumed: 0.018 GB; Exec time (HH:MM:SS): 00:00:17
-16:58:53,522 root INFO GPU Mem Allocated: 5.144 GB
-16:58:53,523 root INFO GPU Mem Cached: 7.184 GB
-16:58:53,537 root INFO img2img_single_image: Memory Before: 16.012 GB, After: 16.288 GB
-16:58:53,551 root INFO Memory Consumed: 0.275 GB; Exec time (HH:MM:SS): 00:00:18
-16:59:09,954 root INFO GPU Mem Allocated: 4.840 GB
-16:59:09,959 root INFO GPU Mem Cached: 7.184 GB
-16:59:09,981 root INFO img2img_single_image: Memory Before: 16.279 GB, After: 16.171 GB
-16:59:09,981 root INFO Memory Consumed: -0.108 GB; Exec time (HH:MM:SS): 00:00:16
-16:59:28,839 root INFO GPU Mem Allocated: 5.144 GB
-16:59:28,840 root INFO GPU Mem Cached: 7.184 GB
-16:59:28,864 root INFO img2img_single_image: Memory Before: 16.177 GB, After: 16.278 GB
-16:59:28,864 root INFO Memory Consumed: 0.101 GB; Exec time (HH:MM:SS): 00:00:18
-16:59:48,110 root INFO GPU Mem Allocated: 5.144 GB
-16:59:48,111 root INFO GPU Mem Cached: 7.184 GB
-16:59:48,131 root INFO img2img_single_image: Memory Before: 16.286 GB, After: 16.480 GB
-16:59:48,132 root INFO Memory Consumed: 0.194 GB; Exec time (HH:MM:SS): 00:00:19
-17:00:07,996 root INFO GPU Mem Allocated: 5.144 GB
-17:00:07,996 root INFO GPU Mem Cached: 7.184 GB
-17:00:08,32 root INFO img2img_single_image: Memory Before: 16.493 GB, After: 16.412 GB
-17:00:08,32 root INFO Memory Consumed: -0.081 GB; Exec time (HH:MM:SS): 00:00:19
-17:00:25,352 root INFO GPU Mem Allocated: 4.840 GB
-17:00:25,353 root INFO GPU Mem Cached: 7.184 GB
-17:00:25,406 root INFO img2img_single_image: Memory Before: 16.408 GB, After: 16.461 GB
-17:00:25,406 root INFO Memory Consumed: 0.053 GB; Exec time (HH:MM:SS): 00:00:17
-17:00:43,534 root INFO GPU Mem Allocated: 4.840 GB
-17:00:43,548 root INFO GPU Mem Cached: 7.184 GB
-17:00:43,569 root INFO img2img_single_image: Memory Before: 16.407 GB, After: 16.397 GB
-17:00:43,582 root INFO Memory Consumed: -0.011 GB; Exec time (HH:MM:SS): 00:00:18
-17:01:00,460 root INFO GPU Mem Allocated: 4.840 GB
-17:01:00,461 root INFO GPU Mem Cached: 7.184 GB
-17:01:00,479 root INFO img2img_single_image: Memory Before: 16.420 GB, After: 16.421 GB
-17:01:00,501 root INFO Memory Consumed: 0.002 GB; Exec time (HH:MM:SS): 00:00:16
-17:01:18,307 root INFO GPU Mem Allocated: 4.840 GB
-17:01:18,331 root INFO GPU Mem Cached: 7.184 GB
-17:01:18,345 root INFO img2img_single_image: Memory Before: 16.434 GB, After: 16.598 GB
-17:01:18,359 root INFO Memory Consumed: 0.164 GB; Exec time (HH:MM:SS): 00:00:17
-17:01:36,946 root INFO GPU Mem Allocated: 5.144 GB
-17:01:36,947 root INFO GPU Mem Cached: 7.184 GB
-17:01:36,983 root INFO img2img_single_image: Memory Before: 16.610 GB, After: 16.392 GB
-17:01:36,983 root INFO Memory Consumed: -0.218 GB; Exec time (HH:MM:SS): 00:00:18
-17:01:37,85 root INFO img2img: Memory Before: 10.457 GB, After: 16.398 GB
-17:01:37,86 root INFO Memory Consumed: 5.940 GB; Exec time (HH:MM:SS): 00:05:20
-17:01:37,97 root INFO ------------------------------ RUN HAS ENDED ------------------------------
-17:10:00,280 root INFO ------------------------------ RUN STARTED WITH HASH: 331130967942343580242239327289039886015 ------------------------------
-17:10:00,285 root INFO Running on device: NVIDIA TITAN X (Pascal)
-17:10:11,728 root INFO GPU Mem Allocated: 5.144 GB
-17:10:11,729 root INFO GPU Mem Cached: 7.184 GB
-17:10:11,751 root INFO img2img_single_image: Memory Before: 16.235 GB, After: 16.396 GB
-17:10:11,753 root INFO Memory Consumed: 0.161 GB; Exec time (HH:MM:SS): 00:00:11
-17:10:23,157 root INFO GPU Mem Allocated: 5.144 GB
-17:10:23,157 root INFO GPU Mem Cached: 7.184 GB
-17:10:23,187 root INFO img2img_single_image: Memory Before: 16.396 GB, After: 16.360 GB
-17:10:23,198 root INFO Memory Consumed: -0.036 GB; Exec time (HH:MM:SS): 00:00:11
-17:10:33,940 root INFO GPU Mem Allocated: 4.840 GB
-17:10:33,941 root INFO GPU Mem Cached: 7.184 GB
-17:10:33,972 root INFO img2img_single_image: Memory Before: 16.360 GB, After: 16.256 GB
-17:10:33,972 root INFO Memory Consumed: -0.104 GB; Exec time (HH:MM:SS): 00:00:10
-17:10:42,964 root INFO GPU Mem Allocated: 4.840 GB
-17:10:42,980 root INFO GPU Mem Cached: 7.184 GB
-17:10:43,4 root INFO img2img_single_image: Memory Before: 16.256 GB, After: 16.297 GB
-17:10:43,12 root INFO Memory Consumed: 0.041 GB; Exec time (HH:MM:SS): 00:00:09
-17:10:56,341 root INFO GPU Mem Allocated: 5.144 GB
-17:10:56,342 root INFO GPU Mem Cached: 7.184 GB
-17:10:56,364 root INFO img2img_single_image: Memory Before: 16.297 GB, After: 16.278 GB
-17:10:56,365 root INFO Memory Consumed: -0.018 GB; Exec time (HH:MM:SS): 00:00:13
+18:28:16,341 root INFO ------------------------------ RUN STARTED WITH HASH: 233904384876598299886529363147717672653 ------------------------------
+18:28:16,352 root INFO Running on device: NVIDIA TITAN X (Pascal)
+18:28:47,602 root INFO GPU Mem Allocated: 5.131 GB
+18:28:47,627 root INFO GPU Mem Cached: 6.990 GB
+18:28:47,645 root INFO img2img_single_image: Memory Before: 10.235 GB, After: 14.006 GB
+18:28:47,655 root INFO Memory Consumed: 3.771 GB; Exec time (HH:MM:SS): 00:00:31
+18:29:08,380 root INFO GPU Mem Allocated: 5.134 GB
+18:29:08,395 root INFO GPU Mem Cached: 6.990 GB
+18:29:08,415 root INFO img2img_single_image: Memory Before: 14.006 GB, After: 14.745 GB
+18:29:08,417 root INFO Memory Consumed: 0.739 GB; Exec time (HH:MM:SS): 00:00:20
+18:29:28,52 root INFO GPU Mem Allocated: 4.844 GB
+18:29:28,63 root INFO GPU Mem Cached: 7.240 GB
+18:29:28,99 root INFO img2img_single_image: Memory Before: 14.745 GB, After: 14.858 GB
+18:29:28,111 root INFO Memory Consumed: 0.113 GB; Exec time (HH:MM:SS): 00:00:19
+18:29:47,947 root INFO GPU Mem Allocated: 4.844 GB
+18:29:47,948 root INFO GPU Mem Cached: 7.240 GB
+18:29:47,966 root INFO img2img_single_image: Memory Before: 14.859 GB, After: 14.876 GB
+18:29:47,966 root INFO Memory Consumed: 0.018 GB; Exec time (HH:MM:SS): 00:00:19
+18:30:08,194 root INFO GPU Mem Allocated: 5.134 GB
+18:30:08,195 root INFO GPU Mem Cached: 7.240 GB
+18:30:08,222 root INFO img2img_single_image: Memory Before: 14.877 GB, After: 15.082 GB
+18:30:08,239 root INFO Memory Consumed: 0.205 GB; Exec time (HH:MM:SS): 00:00:20
+18:30:30,581 root INFO GPU Mem Allocated: 5.134 GB
+18:30:30,596 root INFO GPU Mem Cached: 7.240 GB
+18:30:30,640 root INFO img2img_single_image: Memory Before: 15.051 GB, After: 15.473 GB
+18:30:30,655 root INFO Memory Consumed: 0.422 GB; Exec time (HH:MM:SS): 00:00:22
+18:30:50,131 root INFO GPU Mem Allocated: 4.844 GB
+18:30:50,131 root INFO GPU Mem Cached: 7.240 GB
+18:30:50,170 root INFO img2img_single_image: Memory Before: 15.473 GB, After: 15.230 GB
+18:30:50,171 root INFO Memory Consumed: -0.242 GB; Exec time (HH:MM:SS): 00:00:19
+18:31:12,251 root INFO GPU Mem Allocated: 5.134 GB
+18:31:12,277 root INFO GPU Mem Cached: 7.240 GB
+18:31:12,298 root INFO img2img_single_image: Memory Before: 15.230 GB, After: 15.522 GB
+18:31:12,305 root INFO Memory Consumed: 0.291 GB; Exec time (HH:MM:SS): 00:00:22
+18:31:32,552 root INFO GPU Mem Allocated: 4.844 GB
+18:31:32,564 root INFO GPU Mem Cached: 7.240 GB
+18:31:32,584 root INFO img2img_single_image: Memory Before: 15.532 GB, After: 15.589 GB
+18:31:32,599 root INFO Memory Consumed: 0.057 GB; Exec time (HH:MM:SS): 00:00:20
+18:31:57,674 root INFO GPU Mem Allocated: 5.134 GB
+18:31:57,674 root INFO GPU Mem Cached: 7.240 GB
+18:31:57,703 root INFO img2img_single_image: Memory Before: 15.593 GB, After: 15.640 GB
+18:31:57,715 root INFO Memory Consumed: 0.046 GB; Exec time (HH:MM:SS): 00:00:24
+18:32:17,467 root INFO GPU Mem Allocated: 5.134 GB
+18:32:17,467 root INFO GPU Mem Cached: 7.240 GB
+18:32:17,498 root INFO img2img_single_image: Memory Before: 15.583 GB, After: 15.869 GB
+18:32:17,506 root INFO Memory Consumed: 0.286 GB; Exec time (HH:MM:SS): 00:00:19
+18:32:39,59 root INFO GPU Mem Allocated: 5.134 GB
+18:32:39,60 root INFO GPU Mem Cached: 7.240 GB
+18:32:39,90 root INFO img2img_single_image: Memory Before: 15.878 GB, After: 15.727 GB
+18:32:39,91 root INFO Memory Consumed: -0.151 GB; Exec time (HH:MM:SS): 00:00:21
+18:32:58,552 root INFO GPU Mem Allocated: 4.844 GB
+18:32:58,558 root INFO GPU Mem Cached: 7.240 GB
+18:32:58,592 root INFO img2img_single_image: Memory Before: 15.730 GB, After: 15.697 GB
+18:32:58,597 root INFO Memory Consumed: -0.033 GB; Exec time (HH:MM:SS): 00:00:19
+18:33:18,96 root INFO GPU Mem Allocated: 4.844 GB
+18:33:18,97 root INFO GPU Mem Cached: 7.240 GB
+18:33:18,131 root INFO img2img_single_image: Memory Before: 15.714 GB, After: 15.735 GB
+18:33:18,131 root INFO Memory Consumed: 0.021 GB; Exec time (HH:MM:SS): 00:00:19
+18:33:36,582 root INFO GPU Mem Allocated: 4.844 GB
+18:33:36,583 root INFO GPU Mem Cached: 7.240 GB
+18:33:36,610 root INFO img2img_single_image: Memory Before: 15.738 GB, After: 15.791 GB
+18:33:36,610 root INFO Memory Consumed: 0.053 GB; Exec time (HH:MM:SS): 00:00:18
+18:33:57,589 root INFO GPU Mem Allocated: 4.844 GB
+18:33:57,590 root INFO GPU Mem Cached: 7.240 GB
+18:33:57,618 root INFO img2img_single_image: Memory Before: 15.738 GB, After: 15.774 GB
+18:33:57,639 root INFO Memory Consumed: 0.036 GB; Exec time (HH:MM:SS): 00:00:20
+18:34:17,827 root INFO GPU Mem Allocated: 5.134 GB
+18:34:17,831 root INFO GPU Mem Cached: 7.240 GB
+18:34:17,871 root INFO img2img_single_image: Memory Before: 15.777 GB, After: 15.935 GB
+18:34:17,877 root INFO Memory Consumed: 0.157 GB; Exec time (HH:MM:SS): 00:00:19
+18:34:18,111 root INFO img2img: Memory Before: 10.235 GB, After: 15.953 GB
+18:34:18,111 root INFO Memory Consumed: 5.718 GB; Exec time (HH:MM:SS): 00:06:01
+18:34:18,120 root INFO ------------------------------ RUN HAS ENDED ------------------------------

@@ -35,7 +35,7 @@ def get_available_devices() -> list:
 def img2img(image_folder_url:str,
             model_text_file_url:str,
             image_size:tuple,
-            seed:int, device:str) -> None:
+            seed:int, device:str, cache_path:str) -> None:
     """A method which performs img2img with the dataset on a specified device.
 
     Args:
@@ -44,7 +44,9 @@ def img2img(image_folder_url:str,
         image_size (tuple): A tuple containing the required width and the height of the image.
         seed (int): The starting seed.
         device (str): The device to be selected for inference.
+        cache_path (str): The directory to cache pretrained models.
     """
+
     hash_value = random.getrandbits(128)
     logging.basicConfig(filename="log.txt",
                     filemode='w',
@@ -56,7 +58,7 @@ def img2img(image_folder_url:str,
     # Load the dataset, device and model.
     dataset = DiffusionDataset(images_dir=image_folder_url, models_text_file=model_text_file_url, seed=seed)
     device_name = device.split("-")[0]
-    diff_obj = DiffusionModel(dataset, image_size, device=device_name)
+    diff_obj = DiffusionModel(dataset, image_size, device_name, cache_path)
     result_images = []
     result_captions = []
 
@@ -96,7 +98,10 @@ def img2img(image_folder_url:str,
 
 
 if __name__ == "__main__":
+
+    # --- START UI ---
     st.title("Img2Img inference HuggingFace")
+
     with st.form(key='form_parameters'):
         images_dir = st.text_input("Enter the parent folder path")
         model_text_file_path = st.text_input("Enter the model text file path")
@@ -112,9 +117,10 @@ if __name__ == "__main__":
             seed_input = int(st.number_input("Enter the seed (default=25)", value=25, min_value=0))
         with col2_inp:
             device_input = st.selectbox("Select the device", get_available_devices())
-
+        
+        cache_path = st.text_input("Enter the cache folder path (defaults to current dir)", value="/l/vision/v5/sragas/hf_models")
         submitted = st.form_submit_button("Predict")
 
     if submitted: # The form is submitted
-        img2img(images_dir, model_text_file_path, (width_input, height_input), seed_input, device_input)
+        img2img(images_dir, model_text_file_path, (width_input, height_input), seed_input, device_input, cache_path)
         logging.info(f"{'-' * 30} RUN HAS ENDED {'-' * 30}")

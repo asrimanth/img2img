@@ -28,20 +28,23 @@ class DiffusionDataset(Dataset):
             seed (int, optional): A seed value for the random number generator. Defaults to 25.
         """
         images_dir = images_dir + "/" if images_dir[-1] != "/" else images_dir
-        self.image_paths = [images_dir + img_name for img_name in sorted(os.listdir(images_dir))]
         self.image_names = sorted(os.listdir(images_dir))
+        self.image_paths = [images_dir + img_name for img_name in self.image_names]
         with open(models_text_file, encoding="utf-8") as file:
             self.models = [line.rstrip('\n') for line in file]
         self._set_seed(seed)
 
+
     def __len__(self) -> int:
         return len(self.image_paths)
+
 
     def __getitem__(self, idx: int) -> tuple:
         image_path = self.image_paths[idx]
         prompt_text = " ".join(self.image_names[idx].split("_"))
         model_name = self.models[random.randint(0, len(self.models)-1)]
         return image_path, prompt_text, model_name
+
 
     def _set_seed(self, seed:int) -> None:
         """Sets the initial seed of the available modules.
@@ -54,18 +57,20 @@ class DiffusionDataset(Dataset):
 
 
 class DiffusionModel:
-    def __init__(self, diffusion_data:DiffusionDataset, image_size:tuple, device:str) -> None:
+    def __init__(self, diffusion_data:DiffusionDataset, image_size:tuple, device:str, cache_dir:str) -> None:
         """Performs the img2img on the given dataset.
 
         Args:
             diffusion_data (DiffusionDataset): The dataset containing image, prompt and model name.
             image_size (tuple): The width and height od the image as a tuple.
             device (str): The device for inference.
+            cache_dir (str): The directory to cache pretrained models.
         """
         self.diffusion_data = diffusion_data
         self.image_size = image_size
         self.device = device
         self.cuda_device_id = None
+        self.cache_dir = cache_dir
         if "cuda" in self.device:
             if ":" in self.device:
                 self.cuda_device_id = int(self.device.split(":")[-1])
@@ -91,7 +96,7 @@ class DiffusionModel:
         init_image = Image.open(image_path).convert("RGB")
         init_image = init_image.resize(self.image_size)
         pipeline = StableDiffusionImg2ImgPipeline.from_pretrained(model_name,
-                                                    cache_dir="/l/vision/v5/sragas/",
+                                                    cache_dir=self.cache_dir, # "/l/vision/v5/sragas/hf_models"
                                                     torch_dtype=torch.float32).to(self.device)
         result_images = pipeline(prompt=prompt,
                                  image=init_image,
@@ -101,6 +106,10 @@ class DiffusionModel:
             logging.info(f"GPU Mem Allocated: {torch.cuda.memory_allocated(self.cuda_device_id)/1024**3:3.3f} GB")
             logging.info(f"GPU Mem Cached: {torch.cuda.memory_reserved(self.cuda_device_id)/1024**3:3.3f} GB")
         return result_images[0]
+
+    @profile
+    def img2img(self) -> None:
+        pass
 
 
 if __name__ == "__main__":
